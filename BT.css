@@ -89,6 +89,9 @@ a {
     letter-spacing: 0.03rem;
     word-spacing: 0.1rem;
 }
+navbar.container:hover{
+    background:white;
+}
 
 .common-heading {
     font-size: 2.8rem;
@@ -172,7 +175,9 @@ a {
     height: 200px;
 }
 
-
+.navbar-toggler-icon{
+    border-color:var(--bs-main-color);
+}
 
 
 @media (max-width:991px) {
@@ -234,5 +239,24 @@ a {
 
     .hero-section img{
      margin-bottom:5rem;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .navbar-toggler{
+        border-color: var(--bs-main-color);
+    }
+    .navbar-toggler-icon{
+        /* background:var(--bs-main-color); */
+        color:var(--bs-main-color);
+    }
+    section.para-width{
+        width:auto;
+    }
+    .hero-section{
+        height:100vh;
+    }
+    .more-info-section{
+        text-align: center;
     }
 }
